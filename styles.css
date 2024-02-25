@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0d1c1;
+    height: 100vh;
+  }
+  
+  main {
+    width: 50%;
+    box-sizing: content-box;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.349);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.699);
+  }
+  
+  
+  h1 {
+    color: #59412e;
+    font-weight: 790;
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  span {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #59412e;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .count-check {
+    width: 1rem;
+  }
+  
+  .tasks-container {
+    margin-top: 1.5rem;
+  }
+  
+  .single-task {
+    cursor: pointer;
+    transition: 500ms;
+  }
+  
+  .task-holder {
+    padding: 0 0.5rem;
+  }
+  
+  .single-task .task div figure {
+    width: 0;
+    transition: 500ms;
+  }
+  
+  .single-task .task div figure img {
+    width: 0;
+    display: none;
+    transition: 500ms;
+  }
+  
+  .single-task:hover .task div figure {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .single-task:hover .task div figure img {
+    width: 1.5rem;
+    display: block;
+    transition: 500ms;
+  }
+  
+  .task-article section hr {
+    background: #9b9d9e80;
+    border: 0;
+    height: 1px;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    color: #59412e;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  figure {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .task div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 0.9em;
+  }
+  
+  img {
+    width: 1.5rem;
+  }
+  
+  .check-icon {
+    border: 1px solid #9b9d9e;
+    margin: 0;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .check-img {
+    width: 2rem;
+    visibility: hidden;
+    transition: 500ms;
+  }
+  
+  .check-icon:hover .check-img {
+    visibility: visible;
+    transition: 500ms;
+  }
+  
+  .edit-form {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-form,
+  .edit-form {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border: 1px solid #9b9d9ea8;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 0 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.699);
+  }
+  
+  .input-form input,
+  .edit-form input {
+    padding: 1rem 0.8rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: #59412e;
+    background-color: #c3a27f;
+    outline: none #1e1e1e;
+    border: 0;
+    border-bottom: 1px solid #9b9d9e80;
+    margin-bottom: 1rem;
+  }
+  
+  .input-form input:-webkit-autofill,
+  .input-form input:-webkit-autofill:hover,
+  .input-form input:-webkit-autofill:focus,
+  .input-form input:-webkit-autofill:active .edit-form input:-webkit-autofill,
+  .edit-form input:-webkit-autofill:hover,
+  .edit-form input:-webkit-autofill:focus,
+  .edit-form input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    /* font-size: 25px !important; */
+  }
+  
+  .input-form input::placeholder,
+  .edit-form input::placeholder {
+    color: #59412e;
+  }
+  
+  .input-form figure,
+  .edit-form figure {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    padding: 0 0.8rem 0.5rem 0;
+  }
+  
+  .input-form figure img,
+  .edit-form figure img {
+    width: 1.8rem;
+  }
+  
+  .item-btns {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .add-task-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 96%;
+    margin: none;
+    padding: none;
+    border: none;
+    outline: none;
+    background: #c3a27f;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .add-task-btn:hover p {
+    color: #59412e;
+  }
+  
+  .add-task-btn p {
+    margin: 0;
+    color: #9b9d9e80;
+    font-size: 15px;
+    transition: 500ms;
+  }
+  
+  .display {
+    display: none;
+  }
+  
+  .check-task {
+    text-decoration: line-through;
+    text-decoration-color: #ffffff94;
+  }
+  
+  .message {
+    transition: 500ms;
+  }
+  
+  @media (max-width: 700px) {
+    body {
+      margin: 0;
+      height: 100vh;
+    }
+  
+    main {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      margin: 4rem 1rem;
+    }
+   
+  }

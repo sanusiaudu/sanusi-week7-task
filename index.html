@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <main>
+            <h1>Today <span id="todays-date"></span></h1>
+            <span id="task-count">
+                <figure class="check-icon">
+                    <img class="count-check" src="./img/tick.png" alt="check mark">
+                </figure>
+                <p class="task-counter">You have 0 tasks</p>
+            </span>
+            <section class="tasks-container">
+                <article class="task-article">
+                </article>
+                <article class="input-article">
+                    <form class="input-form display">
+                        <input id="task-input" type="text" placeholder="New task">
+                        <figure>
+                            <button id="add-btn" class="item-btns" type="submit">
+                                <img class="add-btn" src="./img/plus.png" alt="add button">
+                            </button>
+                            <button id="close-btn" class="item-btns" type="submit">
+                                <img class="delete-btn" src="./img/close.png" alt="close button">
+                            </button>
+                        </figure>
+                    </form>
+                </article>
+                <button class="add-task-btn">
+                    <figure>
+                        <img src="./img/plus.png" alt="add task icon">
+                    </figure>
+                    <p>Add task</p>
+                </button>
+            </section>
+        </main>
+        <script src="./app.js"></script>
+    </div>
+</body>
+</html>
